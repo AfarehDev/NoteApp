@@ -78,7 +78,7 @@ fun NoteMainScreen(
                     containerColor = MaterialTheme.colorScheme.background,
                     titleContentColor = MaterialTheme.colorScheme.primary,
                 ),
-                title = { Text("My Notes", overflow = TextOverflow.Ellipsis)
+                title = { Text("Note App", overflow = TextOverflow.Ellipsis)
                 },
                 navigationIcon = {
 
