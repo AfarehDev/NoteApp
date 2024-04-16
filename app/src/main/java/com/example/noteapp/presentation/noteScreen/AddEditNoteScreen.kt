@@ -158,26 +158,22 @@ fun AddEditNoteScreen(
                     Spacer(modifier = Modifier.height(16.dp))
 
                     EnterNoteTitleField(
-                        modifier = Modifier.fillMaxWidth(),
                         value = uiState.title,
                         onValueChange = {
                             viewModel.onChangeTitle(it)
                         },
                         onClearClick = { viewModel.onChangeTitle("") },
-                        onNextClick = { /*TODO*/ },
                         label = "Enter Title",
                         isSingleLine = true,
                     )
                     Spacer(modifier = Modifier.height(16.dp))
 
                     EnterNoteDescriptionField(
-                        modifier = Modifier.fillMaxWidth(),
                         value = uiState.text,
                         onValueChange = {
                             viewModel.onChangeText(it)
                         },
                         onClearClick = { viewModel.onChangeText("") },
-                        onNextClick = { /*TODO*/ },
                         label = "Enter Content",
                         isSingleLine = false,
                         maxLines = 20

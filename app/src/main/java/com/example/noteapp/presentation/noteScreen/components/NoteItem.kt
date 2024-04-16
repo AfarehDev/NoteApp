@@ -23,8 +23,6 @@ import com.example.noteapp.domain.models.entity.Note
 fun NoteItem(
     note: Note,
     modifier: Modifier = Modifier,
-    //cornerRadius: Dp = 10.dp,
-    //cutCornerSize: Dp = 30.dp,
     onDeleteClick: () -> Unit
 ) {
     Box(
@@ -37,7 +35,6 @@ fun NoteItem(
                 .padding(8.dp)
                 .background(Color(note.color) , shape = RoundedCornerShape(10.dp))
             ,
-                //.padding(end = 32.dp)
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(

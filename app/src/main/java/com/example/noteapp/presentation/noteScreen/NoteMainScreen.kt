@@ -135,7 +135,7 @@ fun NoteMainScreen(
                     Spacer(modifier = Modifier.height(16.dp))
 
                     LazyVerticalStaggeredGrid(
-                        columns = StaggeredGridCells.Adaptive(150.dp), // يجب ان يكون عرض العنصر مساوي للقيمه هذه
+                        columns = StaggeredGridCells.Adaptive(150.dp),
                         modifier = Modifier.fillMaxSize(),
                         contentPadding = PaddingValues(8.dp),
                         horizontalArrangement = Arrangement.spacedBy(8.dp),
